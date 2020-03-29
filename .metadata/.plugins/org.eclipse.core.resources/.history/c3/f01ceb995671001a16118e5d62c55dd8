@@ -40,7 +40,7 @@ extern "C" {
 #define ADC_DATA_MAX 1
 extern uint32_t adc_data[ADC_DATA_MAX];
 
-#define LED_PERIOD_LIMIT 256
+#define LED_PERIOD_LIMIT 512
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
