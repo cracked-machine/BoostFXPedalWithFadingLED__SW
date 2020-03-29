@@ -22,6 +22,7 @@
 #include "main.h"
 #include "adc.h"
 #include "dma.h"
+#include "lptim.h"
 #include "tim.h"
 #include "gpio.h"
 
@@ -94,15 +95,31 @@ int main(void)
   MX_TIM2_Init();
   MX_TIM21_Init();
   MX_ADC_Init();
+  MX_LPTIM1_Init();
   /* USER CODE BEGIN 2 */
+
+  // start PWM outputs
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_2);
   HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_3);
 
+  // init PWM to 50% duty
+  TIM2->ARR = 8191;
+  TIM2->CCR1 = 0;
+  TIM2->CCR2 = 0;
+  TIM2->CCR3 = 0;
+
+  // debounce timer
   HAL_TIM_Base_Start_IT(&htim21);
 
-  HAL_GPIO_WritePin(BYPASS_ENABLE_GPIO_Port, BYPASS_ENABLE_Pin, 1);
+  HAL_LPTIM_Counter_Start_IT(&hlptim1, LED_PERIOD_LIMIT);
+  LPTIM1->CFGR |= LPTIM_CFGR_PRESC_0 | LPTIM_CFGR_PRESC_1 | LPTIM_CFGR_PRESC_2;
+
+
+  // init bypass switch (clean signal default)
+  HAL_GPIO_WritePin(CLEAN_ENABLE_GPIO_Port, CLEAN_ENABLE_Pin, 1);
   HAL_GPIO_WritePin(FX_ENABLE_GPIO_Port, FX_ENABLE_Pin, 0);
+
 
   HAL_ADC_Start_DMA(&hadc, adc_data, ADC_DATA_MAX);
   /* USER CODE END 2 */
@@ -111,6 +128,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -126,6 +144,7 @@ void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+  RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
 
   /** Configure the main internal regulator output voltage 
   */
@@ -153,6 +172,13 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_LPTIM1;
+  PeriphClkInit.LptimClockSelection = RCC_LPTIM1CLKSOURCE_PCLK;
+
+  if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
   }
