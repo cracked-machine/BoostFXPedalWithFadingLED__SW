@@ -47,8 +47,15 @@
 
 uint16_t last_interrupt_time = 0;
 
-uint16_t led_value = 0;
-uint8_t led_fade_up = 1;
+// same value for sync, offset values for pan
+uint16_t led_value1 = 0;
+uint16_t led_value2 = 0;
+
+uint8_t led_fade_up1 = 1;
+uint8_t led_fade_up2 = 0;
+
+uint8_t led1_fade_stop = 0;
+uint8_t led2_fade_stop = 1;
 
 /* USER CODE END PV */
 
@@ -67,7 +74,95 @@ extern DMA_HandleTypeDef hdma_adc;
 extern LPTIM_HandleTypeDef hlptim1;
 extern TIM_HandleTypeDef htim21;
 /* USER CODE BEGIN EV */
+void ledprogram_syncfade()
+{
+	// led pwm ch1
+	if(led_value1 < 1)
+	{
+		led_fade_up1 = 1;
+	}
+	if(led_value1 > LED_PERIOD_LIMIT) {
+		led_fade_up1 = 0;
+	}
 
+	if(led_fade_up1)
+	{
+		led_value1++;
+	}
+	else
+	{
+		led_value1--;
+	}
+
+	// led pwm ch2
+	if(led_value2 < 1)
+	{
+		led_fade_up2 = 1;
+	}
+	if(led_value2 > LED_PERIOD_LIMIT) {
+		led_fade_up2 = 0;
+	}
+
+	if(led_fade_up2)
+	{
+		led_value2++;
+	}
+	else
+	{
+		led_value2--;
+	}
+}
+
+void ledprogram_panfade()
+{
+	// led pwm ch1
+	if(!led1_fade_stop)
+	{
+		if(led_value1 < 1)
+		{
+			led_fade_up1 = 1;
+			led1_fade_stop = 1;
+			led2_fade_stop = 0;
+
+		}
+		if(led_value1 > LED_PERIOD_LIMIT) {
+			led_fade_up1 = 0;
+		}
+
+		if(led_fade_up1)
+		{
+			led_value1++;
+		}
+		else
+		{
+			led_value1--;
+		}
+	}
+	if(!led2_fade_stop)
+	{
+		// led pwm ch2
+		if(led_value2 < 1)
+		{
+			led_fade_up2 = 1;
+			led2_fade_stop = 1;
+			led1_fade_stop = 0;
+
+		}
+		if(led_value2 > LED_PERIOD_LIMIT) {
+			led_fade_up2 = 0;
+		}
+
+		if(led_fade_up2)
+		{
+			led_value2++;
+		}
+		else
+		{
+			led_value2--;
+		}
+	}
+
+}
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -190,22 +285,12 @@ void DMA1_Channel1_IRQHandler(void)
 void LPTIM1_IRQHandler(void)
 {
   /* USER CODE BEGIN LPTIM1_IRQn 0 */
-	if(led_value < 1)
-	{
-		led_fade_up = 1;
-	}
-	if(led_value > LED_PERIOD_LIMIT) {
-		led_fade_up = 0;
-	}
+	//ledprogram_syncfade();
+	ledprogram_panfade();
 
-	if(led_fade_up)
-		led_value++;
-	else
-		led_value--;
-
-	TIM2->CCR1 = led_value;
-	TIM2->CCR2 = led_value;
-	TIM2->CCR3 = led_value;
+	TIM2->CCR1 = led_value1;
+	TIM2->CCR2 = led_value2;
+	//TIM2->CCR3 = led_value;
   /* USER CODE END LPTIM1_IRQn 0 */
   HAL_LPTIM_IRQHandler(&hlptim1);
   /* USER CODE BEGIN LPTIM1_IRQn 1 */
