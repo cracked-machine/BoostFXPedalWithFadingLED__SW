@@ -1,0 +1,10 @@
+00:35:59 **** Incremental Build of configuration Debug for project OverDriverPedal_sw2 ****
+make -j4 all 
+arm-none-eabi-size   OverDriverPedal_sw2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4468	     12	   1572	   6052	   17a4	OverDriverPedal_sw2.elf
+Finished building: default.size.stdout
+ 
+
+00:36:00 Build Finished. 0 errors, 0 warnings. (took 529ms)
+
