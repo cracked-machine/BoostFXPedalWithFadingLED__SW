@@ -20,6 +20,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "lptim.h"
 #include "tim.h"
 #include "gpio.h"
 
@@ -72,12 +73,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  
-
-  LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
-  LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_PWR);
-
-  /* System interrupt init*/
+  HAL_Init();
 
   /* USER CODE BEGIN Init */
 
@@ -93,19 +89,47 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_TIM2_Init();
+  MX_LPTIM1_Init();
+  MX_TIM21_Init();
   /* USER CODE BEGIN 2 */
 
   LL_TIM_OC_SetMode(TIM2, LL_TIM_CHANNEL_CH1, LL_TIM_OCMODE_PWM1);
-  LL_TIM_OC_SetMode(TIM2, LL_TIM_CHANNEL_CH2, LL_TIM_OCMODE_PWM1);
-
-  TIM2->ARR = 8191;
-  TIM2->CCR1 = 32768;
-  TIM2->CCR2 = 32768;
-
   LL_TIM_CC_EnableChannel(TIM2, LL_TIM_CHANNEL_CH1);
+
+  LL_TIM_OC_SetMode(TIM2, LL_TIM_CHANNEL_CH2, LL_TIM_OCMODE_PWM1);
   LL_TIM_CC_EnableChannel(TIM2, LL_TIM_CHANNEL_CH2);
 
   LL_TIM_EnableCounter(TIM2);
+
+  TIM2->ARR = 8191;
+  // init the PWM duty to 0%
+  TIM2->CCR1 = 0;
+  TIM2->CCR2 = 0;
+
+
+
+  // init bypass soft switches
+  // clean routing enabled, fx routing disabled
+  CLEAN_ENABLE_GPIO_Port->ODR |= (CLEAN_ENABLE_Pin);
+  FX_ENABLE_GPIO_Port->ODR &= ~(FX_ENABLE_Pin);
+
+
+  // led fade timer
+  LL_TIM_EnableIT_UPDATE(TIM21);
+  LL_TIM_EnableCounter(TIM21);
+  TIM21->PSC = 65535;
+  TIM21->ARR = 65535;
+  //HAL_TIM_Base_Start_IT(&htim21);
+
+  // debounce timer
+  LL_LPTIM_EnableIT_UP(LPTIM1);
+  LL_LPTIM_Enable(LPTIM1);
+  LL_LPTIM_StartCounter(LPTIM1,LL_LPTIM_OPERATING_MODE_CONTINUOUS);
+
+  //HAL_LPTIM_Counter_Start_IT(&hlptim1, LED_PERIOD_LIMIT);
+  LPTIM1->CFGR |= LPTIM_CFGR_PRESC_0 | LPTIM_CFGR_PRESC_1 | LPTIM_CFGR_PRESC_2;
+  LPTIM1->ARR = 65535;
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -141,29 +165,32 @@ void SystemClock_Config(void)
   Error_Handler();  
   }
   LL_PWR_SetRegulVoltageScaling(LL_PWR_REGU_VOLTAGE_SCALE1);
-  LL_RCC_MSI_Enable();
+  LL_RCC_HSI_Enable();
 
-   /* Wait till MSI is ready */
-  while(LL_RCC_MSI_IsReady() != 1)
+   /* Wait till HSI is ready */
+  while(LL_RCC_HSI_IsReady() != 1)
   {
     
   }
-  LL_RCC_MSI_SetRange(LL_RCC_MSIRANGE_5);
-  LL_RCC_MSI_SetCalibTrimming(0);
+  LL_RCC_HSI_SetCalibTrimming(16);
   LL_RCC_SetAHBPrescaler(LL_RCC_SYSCLK_DIV_1);
   LL_RCC_SetAPB1Prescaler(LL_RCC_APB1_DIV_1);
   LL_RCC_SetAPB2Prescaler(LL_RCC_APB2_DIV_1);
-  LL_RCC_SetSysClkSource(LL_RCC_SYS_CLKSOURCE_MSI);
+  LL_RCC_SetSysClkSource(LL_RCC_SYS_CLKSOURCE_HSI);
 
    /* Wait till System clock is ready */
-  while(LL_RCC_GetSysClkSource() != LL_RCC_SYS_CLKSOURCE_STATUS_MSI)
+  while(LL_RCC_GetSysClkSource() != LL_RCC_SYS_CLKSOURCE_STATUS_HSI)
   {
   
   }
+  LL_SetSystemCoreClock(16000000);
 
-  LL_Init1msTick(2097000);
-
-  LL_SetSystemCoreClock(2097000);
+   /* Update the time base */
+  if (HAL_InitTick (TICK_INT_PRIORITY) != HAL_OK)
+  {
+    Error_Handler();  
+  };
+  LL_RCC_SetLPTIMClockSource(LL_RCC_LPTIM1_CLKSOURCE_PCLK1);
 }
 
 /* USER CODE BEGIN 4 */
