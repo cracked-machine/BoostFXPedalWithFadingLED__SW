@@ -30,4 +30,11 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>LogSequenceGeneration</name>
+			<type>2</type>
+			<location>/home/chris/Projects/Python/LogSequenceGeneration</location>
+		</link>
+	</linkedResources>
 </projectDescription>

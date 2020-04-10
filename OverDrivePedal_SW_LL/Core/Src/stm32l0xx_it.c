@@ -42,8 +42,12 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN PV */
+
 uint16_t last_interrupt_time = 0;
 #define MAX_DEBOUNCE_DELAY 64
+
+
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -57,8 +61,10 @@ uint16_t last_interrupt_time = 0;
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-extern TIM_HandleTypeDef htim21;
+
 /* USER CODE BEGIN EV */
+
+
 
 /* USER CODE END EV */
 
@@ -127,7 +133,7 @@ void SysTick_Handler(void)
   /* USER CODE BEGIN SysTick_IRQn 0 */
 
   /* USER CODE END SysTick_IRQn 0 */
-  HAL_IncTick();
+  
   /* USER CODE BEGIN SysTick_IRQn 1 */
 
   /* USER CODE END SysTick_IRQn 1 */
@@ -174,6 +180,9 @@ void LPTIM1_IRQHandler(void)
 {
   /* USER CODE BEGIN LPTIM1_IRQn 0 */
 
+
+	//TIM2->CCR1 = led_value1;
+	//TIM2->CCR2 = led_value2;
   /* USER CODE END LPTIM1_IRQn 0 */
   /* USER CODE BEGIN LPTIM1_IRQn 1 */
 
@@ -188,7 +197,6 @@ void TIM21_IRQHandler(void)
   /* USER CODE BEGIN TIM21_IRQn 0 */
 
   /* USER CODE END TIM21_IRQn 0 */
-  HAL_TIM_IRQHandler(&htim21);
   /* USER CODE BEGIN TIM21_IRQn 1 */
 
   /* USER CODE END TIM21_IRQn 1 */

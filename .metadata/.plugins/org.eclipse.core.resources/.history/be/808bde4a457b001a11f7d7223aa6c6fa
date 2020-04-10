@@ -1,0 +1,14 @@
+/*
+ * ledprograms.h
+ *
+ *  Created on: Apr 10, 2020
+ *      Author: chris
+ */
+
+#ifndef INC_LEDPROGRAMS_H_
+#define INC_LEDPROGRAMS_H_
+
+void ledprogram_syncfade();
+
+
+#endif /* INC_LEDPROGRAMS_H_ */

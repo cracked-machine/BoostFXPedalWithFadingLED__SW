@@ -26,7 +26,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "ledprograms.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -46,7 +46,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-uint8_t pwm_bit_pos = 0;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -73,7 +73,12 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+  
+
+  LL_APB2_GRP1_EnableClock(LL_APB2_GRP1_PERIPH_SYSCFG);
+  LL_APB1_GRP1_EnableClock(LL_APB1_GRP1_PERIPH_PWR);
+
+  /* System interrupt init*/
 
   /* USER CODE BEGIN Init */
 
@@ -114,37 +119,36 @@ int main(void)
   FX_ENABLE_GPIO_Port->ODR &= ~(FX_ENABLE_Pin);
 
 
-  // led fade timer
-  LL_TIM_EnableIT_UPDATE(TIM21);
+  // debounce timer
+  //LL_TIM_EnableIT_UPDATE(TIM21);
   LL_TIM_EnableCounter(TIM21);
   TIM21->PSC = 65535;
   TIM21->ARR = 65535;
   //HAL_TIM_Base_Start_IT(&htim21);
 
-  // debounce timer
-  LL_LPTIM_EnableIT_UP(LPTIM1);
+  /*
+  // led fade timer
+  LL_LPTIM_EnableIT_ARRM(LPTIM1);
   LL_LPTIM_Enable(LPTIM1);
   LL_LPTIM_StartCounter(LPTIM1,LL_LPTIM_OPERATING_MODE_CONTINUOUS);
 
   //HAL_LPTIM_Counter_Start_IT(&hlptim1, LED_PERIOD_LIMIT);
   LPTIM1->CFGR |= LPTIM_CFGR_PRESC_0 | LPTIM_CFGR_PRESC_1 | LPTIM_CFGR_PRESC_2;
-  LPTIM1->ARR = 65535;
-
+  LPTIM1->ARR = 512;
+   */
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  LL_mDelay(200);
-	  TIM2->CCR1 = 0;
-	  TIM2->CCR2 = 0;
-	  TIM2->CCR1 |= (1<<pwm_bit_pos);
-	  TIM2->CCR2 |= (1<<pwm_bit_pos);
 
-	  pwm_bit_pos++;
-	  if(pwm_bit_pos > 15)
-		  pwm_bit_pos = 0;
+
+	  LL_mDelay(100);
+	  ledprogram_contfade();
+	  //ledprogram_stepfade();
+
+
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -183,13 +187,10 @@ void SystemClock_Config(void)
   {
   
   }
-  LL_SetSystemCoreClock(16000000);
 
-   /* Update the time base */
-  if (HAL_InitTick (TICK_INT_PRIORITY) != HAL_OK)
-  {
-    Error_Handler();  
-  };
+  LL_Init1msTick(16000000);
+
+  LL_SetSystemCoreClock(16000000);
   LL_RCC_SetLPTIMClockSource(LL_RCC_LPTIM1_CLKSOURCE_PCLK1);
 }
 

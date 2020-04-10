@@ -1,0 +1,28 @@
+/*
+ * ledprograms.h
+ *
+ *  Created on: Apr 10, 2020
+ *      Author: chris
+ */
+
+#ifndef INC_LEDPROGRAMS_H_
+#define INC_LEDPROGRAMS_H_
+
+// same value for sync, offset values for pan
+uint16_t led_value1 = 0;
+uint16_t led_value2 = 0;
+
+uint8_t led_fade_up1 = 1;
+uint8_t led_fade_up2 = 0;
+
+uint8_t led1_fade_stop = 0;
+uint8_t led2_fade_stop = 1;
+
+uint8_t pwm_bit_pos = 0;
+
+
+void ledprogram_syncfade();
+void ledprogram_panfade();
+void ledprogram_stepfade();
+
+#endif /* INC_LEDPROGRAMS_H_ */

@@ -1,0 +1,2 @@
+ledprograms.c:121:6:ledprogram_contfade	8	static
+ledprograms.c:133:6:ledprogram_stepfade	8	static
