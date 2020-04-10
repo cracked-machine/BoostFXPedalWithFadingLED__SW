@@ -16,7 +16,6 @@ void ledprogram_panfade();
 */
 void ledprogram_contfade();
 void ledprogram_stepfade();
-void ledprogram_symcontfade();
 /*
 uint8_t get_pwm_bit_pos();
 void increment_pwm_bit_pos();

@@ -25,8 +25,7 @@ uint8_t led1_fade_stop = 0;
 uint8_t led2_fade_stop = 1;
 */
 
-//uint8_t pwm_bit_pos = FADE_LOG_SEQ_DATA_SIZE/5;
-uint8_t pwm_bit_pos = 0;
+uint8_t pwm_bit_pos = FADE_LOG_SEQ_DATA_SIZE/5;
 uint8_t pwm_dir_forward = 1;
 /*
 void ledprogram_syncfade()
@@ -133,7 +132,7 @@ void ledprogram_symcontfade()
 
 
 	  // change direction at sequence limits
-	  if(pwm_bit_pos >= (FADE_LOG_SEQ_DATA_SIZE-1))
+	  if(pwm_bit_pos => (FADE_LOG_SEQ_DATA_SIZE-1))
 	  {
 		  //pwm_bit_pos = FADE_LOG_SEQ_DATA_SIZE/5;
 		  pwm_dir_forward = 0;
@@ -160,7 +159,7 @@ void ledprogram_contfade()
 
 	  pwm_bit_pos++;
 	  if(pwm_bit_pos > (FADE_LOG_SEQ_DATA_SIZE-1))
-		  pwm_bit_pos = 0;
+		  pwm_bit_pos = FADE_LOG_SEQ_DATA_SIZE/5;
 }
 
 // PWM by left-shift

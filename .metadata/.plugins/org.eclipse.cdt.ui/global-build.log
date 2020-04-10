@@ -10792,3 +10792,305 @@ arm-none-eabi-size   OverDrivePedal_SW_LL.elf
    7332	    272	   1568	   9172	   23d4	OverDrivePedal_SW_LL.elf
 Finished building: default.size.stdout
  
+21:51:00 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7332	    272	   1568	   9172	   23d4	OverDrivePedal_SW_LL.elf
+Finished building: default.size.stdout
+ 
+21:52:19 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7332	    272	   1568	   9172	   23d4	OverDrivePedal_SW_LL.elf
+Finished building: default.size.stdout
+ 
+22:05:57 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7332	    272	   1568	   9172	   23d4	OverDrivePedal_SW_LL.elf
+Finished building: default.size.stdout
+ 
+22:33:35 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/ledprograms.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ledprograms.d" -MT"Core/Src/ledprograms.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ledprograms.o"
+arm-none-eabi-gcc -o "OverDrivePedal_SW_LL.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/STM32L011D4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OverDrivePedal_SW_LL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OverDrivePedal_SW_LL.elf
+ 
+arm-none-eabi-objdump -h -S  OverDrivePedal_SW_LL.elf  > "OverDrivePedal_SW_LL.list"
+arm-none-eabi-objcopy  -O binary  OverDrivePedal_SW_LL.elf  "OverDrivePedal_SW_LL.bin"
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7332	    272	   1568	   9172	   23d4	OverDrivePedal_SW_LL.elf
+Finished building: default.size.stdout
+Finished building: OverDrivePedal_SW_LL.bin
+ 
+ 
+Finished building: OverDrivePedal_SW_LL.list
+ 
+22:34:02 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:148:4: warning: implicit declaration of function 'ledprogram_symcontfade'; did you mean 'ledprogram_contfade'? [-Wimplicit-function-declaration]
+    ledprogram_symcontfade();
+    ^~~~~~~~~~~~~~~~~~~~~~
+    ledprogram_contfade
+arm-none-eabi-gcc -o "OverDrivePedal_SW_LL.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/STM32L011D4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OverDrivePedal_SW_LL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OverDrivePedal_SW_LL.elf
+ 
+arm-none-eabi-objdump -h -S  OverDrivePedal_SW_LL.elf  > "OverDrivePedal_SW_LL.list"
+arm-none-eabi-objcopy  -O binary  OverDrivePedal_SW_LL.elf  "OverDrivePedal_SW_LL.bin"
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7380	    272	   1568	   9220	   2404	OverDrivePedal_SW_LL.elf
+Finished building: default.size.stdout
+Finished building: OverDrivePedal_SW_LL.bin
+ 
+ 
+Finished building: OverDrivePedal_SW_LL.list
+ 
+22:34:36 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/ledprograms.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ledprograms.d" -MT"Core/Src/ledprograms.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ledprograms.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "OverDrivePedal_SW_LL.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/STM32L011D4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OverDrivePedal_SW_LL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OverDrivePedal_SW_LL.elf
+ 
+arm-none-eabi-objdump -h -S  OverDrivePedal_SW_LL.elf  > "OverDrivePedal_SW_LL.list"
+arm-none-eabi-objcopy  -O binary  OverDrivePedal_SW_LL.elf  "OverDrivePedal_SW_LL.bin"
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7380	    272	   1568	   9220	   2404	OverDrivePedal_SW_LL.elf
+Finished building: default.size.stdout
+ 
+Finished building: OverDrivePedal_SW_LL.bin
+ 
+Finished building: OverDrivePedal_SW_LL.list
+ 
+22:36:46 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/ledprograms.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ledprograms.d" -MT"Core/Src/ledprograms.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ledprograms.o"
+arm-none-eabi-gcc -o "OverDrivePedal_SW_LL.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/STM32L011D4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OverDrivePedal_SW_LL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OverDrivePedal_SW_LL.elf
+ 
+arm-none-eabi-objdump -h -S  OverDrivePedal_SW_LL.elf  > "OverDrivePedal_SW_LL.list"
+arm-none-eabi-objcopy  -O binary  OverDrivePedal_SW_LL.elf  "OverDrivePedal_SW_LL.bin"
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7372	    272	   1568	   9212	   23fc	OverDrivePedal_SW_LL.elf
+Finished building: default.size.stdout
+Finished building: OverDrivePedal_SW_LL.bin
+ 
+ 
+Finished building: OverDrivePedal_SW_LL.list
+ 
+22:38:49 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/ledprograms.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ledprograms.d" -MT"Core/Src/ledprograms.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ledprograms.o"
+arm-none-eabi-gcc -o "OverDrivePedal_SW_LL.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/STM32L011D4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OverDrivePedal_SW_LL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OverDrivePedal_SW_LL.elf
+ 
+arm-none-eabi-objdump -h -S  OverDrivePedal_SW_LL.elf  > "OverDrivePedal_SW_LL.list"
+arm-none-eabi-objcopy  -O binary  OverDrivePedal_SW_LL.elf  "OverDrivePedal_SW_LL.bin"
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7372	    272	   1568	   9212	   23fc	OverDrivePedal_SW_LL.elf
+Finished building: default.size.stdout
+Finished building: OverDrivePedal_SW_LL.bin
+ 
+ 
+Finished building: OverDrivePedal_SW_LL.list
+ 
+22:40:59 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/ledprograms.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ledprograms.d" -MT"Core/Src/ledprograms.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ledprograms.o"
+arm-none-eabi-gcc -o "OverDrivePedal_SW_LL.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/STM32L011D4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OverDrivePedal_SW_LL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OverDrivePedal_SW_LL.elf
+ 
+arm-none-eabi-objdump -h -S  OverDrivePedal_SW_LL.elf  > "OverDrivePedal_SW_LL.list"
+arm-none-eabi-objcopy  -O binary  OverDrivePedal_SW_LL.elf  "OverDrivePedal_SW_LL.bin"
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7372	    272	   1568	   9212	   23fc	OverDrivePedal_SW_LL.elf
+Finished building: default.size.stdout
+ 
+Finished building: OverDrivePedal_SW_LL.bin
+ 
+Finished building: OverDrivePedal_SW_LL.list
+ 
+22:45:12 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/ledprograms.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ledprograms.d" -MT"Core/Src/ledprograms.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ledprograms.o"
+arm-none-eabi-gcc -o "OverDrivePedal_SW_LL.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/STM32L011D4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OverDrivePedal_SW_LL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OverDrivePedal_SW_LL.elf
+ 
+arm-none-eabi-objdump -h -S  OverDrivePedal_SW_LL.elf  > "OverDrivePedal_SW_LL.list"
+arm-none-eabi-objcopy  -O binary  OverDrivePedal_SW_LL.elf  "OverDrivePedal_SW_LL.bin"
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7372	    272	   1568	   9212	   23fc	OverDrivePedal_SW_LL.elf
+Finished building: OverDrivePedal_SW_LL.bin
+Finished building: default.size.stdout
+ 
+ 
+Finished building: OverDrivePedal_SW_LL.list
+ 
+22:47:26 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/ledprograms.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ledprograms.d" -MT"Core/Src/ledprograms.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ledprograms.o"
+arm-none-eabi-gcc -o "OverDrivePedal_SW_LL.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/STM32L011D4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OverDrivePedal_SW_LL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OverDrivePedal_SW_LL.elf
+ 
+arm-none-eabi-objdump -h -S  OverDrivePedal_SW_LL.elf  > "OverDrivePedal_SW_LL.list"
+arm-none-eabi-objcopy  -O binary  OverDrivePedal_SW_LL.elf  "OverDrivePedal_SW_LL.bin"
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7384	    272	   1568	   9224	   2408	OverDrivePedal_SW_LL.elf
+Finished building: default.size.stdout
+Finished building: OverDrivePedal_SW_LL.bin
+ 
+ 
+Finished building: OverDrivePedal_SW_LL.list
+ 
+22:48:23 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/ledprograms.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ledprograms.d" -MT"Core/Src/ledprograms.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ledprograms.o"
+../Core/Src/ledprograms.c: In function 'ledprogram_symcontfade':
+../Core/Src/ledprograms.c:135:20: error: expected expression before '>' token
+    if(pwm_bit_pos => (FADE_LOG_SEQ_DATA_SIZE-1))
+                    ^
+make: *** [Core/Src/subdir.mk:44: Core/Src/ledprograms.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+22:48:30 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/ledprograms.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ledprograms.d" -MT"Core/Src/ledprograms.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ledprograms.o"
+arm-none-eabi-gcc -o "OverDrivePedal_SW_LL.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/STM32L011D4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OverDrivePedal_SW_LL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OverDrivePedal_SW_LL.elf
+ 
+arm-none-eabi-objdump -h -S  OverDrivePedal_SW_LL.elf  > "OverDrivePedal_SW_LL.list"
+arm-none-eabi-objcopy  -O binary  OverDrivePedal_SW_LL.elf  "OverDrivePedal_SW_LL.bin"
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7384	    272	   1568	   9224	   2408	OverDrivePedal_SW_LL.elf
+Finished building: OverDrivePedal_SW_LL.bin
+Finished building: default.size.stdout
+ 
+ 
+Finished building: OverDrivePedal_SW_LL.list
+ 
+22:48:34 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7384	    272	   1568	   9224	   2408	OverDrivePedal_SW_LL.elf
+Finished building: default.size.stdout
+ 
+22:56:50 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/ledprograms.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ledprograms.d" -MT"Core/Src/ledprograms.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ledprograms.o"
+arm-none-eabi-gcc -o "OverDrivePedal_SW_LL.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/STM32L011D4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OverDrivePedal_SW_LL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OverDrivePedal_SW_LL.elf
+ 
+arm-none-eabi-objdump -h -S  OverDrivePedal_SW_LL.elf  > "OverDrivePedal_SW_LL.list"
+arm-none-eabi-objcopy  -O binary  OverDrivePedal_SW_LL.elf  "OverDrivePedal_SW_LL.bin"
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7384	    144	   1568	   9096	   2388	OverDrivePedal_SW_LL.elf
+Finished building: default.size.stdout
+ 
+Finished building: OverDrivePedal_SW_LL.bin
+ 
+Finished building: OverDrivePedal_SW_LL.list
+ 
+22:57:50 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/ledprograms.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ledprograms.d" -MT"Core/Src/ledprograms.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ledprograms.o"
+arm-none-eabi-gcc -o "OverDrivePedal_SW_LL.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/STM32L011D4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OverDrivePedal_SW_LL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OverDrivePedal_SW_LL.elf
+ 
+arm-none-eabi-objdump -h -S  OverDrivePedal_SW_LL.elf  > "OverDrivePedal_SW_LL.list"
+arm-none-eabi-objcopy  -O binary  OverDrivePedal_SW_LL.elf  "OverDrivePedal_SW_LL.bin"
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7384	    144	   1568	   9096	   2388	OverDrivePedal_SW_LL.elf
+Finished building: default.size.stdout
+Finished building: OverDrivePedal_SW_LL.bin
+ 
+ 
+Finished building: OverDrivePedal_SW_LL.list
+ 
+22:58:49 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/ledprograms.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ledprograms.d" -MT"Core/Src/ledprograms.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ledprograms.o"
+arm-none-eabi-gcc -o "OverDrivePedal_SW_LL.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/STM32L011D4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OverDrivePedal_SW_LL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OverDrivePedal_SW_LL.elf
+ 
+arm-none-eabi-objdump -h -S  OverDrivePedal_SW_LL.elf  > "OverDrivePedal_SW_LL.list"
+arm-none-eabi-objcopy  -O binary  OverDrivePedal_SW_LL.elf  "OverDrivePedal_SW_LL.bin"
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7384	    272	   1568	   9224	   2408	OverDrivePedal_SW_LL.elf
+Finished building: default.size.stdout
+Finished building: OverDrivePedal_SW_LL.bin
+ 
+ 
+Finished building: OverDrivePedal_SW_LL.list
+ 
+22:59:33 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/ledprograms.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ledprograms.d" -MT"Core/Src/ledprograms.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ledprograms.o"
+arm-none-eabi-gcc -o "OverDrivePedal_SW_LL.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/STM32L011D4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OverDrivePedal_SW_LL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OverDrivePedal_SW_LL.elf
+ 
+arm-none-eabi-objdump -h -S  OverDrivePedal_SW_LL.elf  > "OverDrivePedal_SW_LL.list"
+arm-none-eabi-objcopy  -O binary  OverDrivePedal_SW_LL.elf  "OverDrivePedal_SW_LL.bin"
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7384	    272	   1568	   9224	   2408	OverDrivePedal_SW_LL.elf
+Finished building: default.size.stdout
+ 
+Finished building: OverDrivePedal_SW_LL.bin
+ 
+Finished building: OverDrivePedal_SW_LL.list
+ 
+23:04:59 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/ledprograms.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ledprograms.d" -MT"Core/Src/ledprograms.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ledprograms.o"
+In file included from ../Core/Src/ledprograms.c:11:0:
+/home/chris/Projects/Python/LogSequenceGeneration/fade_log_seq.h:22:83: warning: large integer implicitly truncated to unsigned type [-Woverflow]
+  360526962, 513635690, 731766692, 1042533652, 1485277244, 2116045354, 3014688308, 4294967296
+                                                                                   ^~~~~~~~~~
+arm-none-eabi-gcc -o "OverDrivePedal_SW_LL.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/STM32L011D4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OverDrivePedal_SW_LL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OverDrivePedal_SW_LL.elf
+ 
+arm-none-eabi-objdump -h -S  OverDrivePedal_SW_LL.elf  > "OverDrivePedal_SW_LL.list"
+arm-none-eabi-objcopy  -O binary  OverDrivePedal_SW_LL.elf  "OverDrivePedal_SW_LL.bin"
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7384	    208	   1568	   9160	   23c8	OverDrivePedal_SW_LL.elf
+Finished building: default.size.stdout
+Finished building: OverDrivePedal_SW_LL.bin
+ 
+ 
+Finished building: OverDrivePedal_SW_LL.list
+ 
+23:05:48 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/ledprograms.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ledprograms.d" -MT"Core/Src/ledprograms.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/ledprograms.o"
+arm-none-eabi-gcc -o "OverDrivePedal_SW_LL.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/STM32L011D4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OverDrivePedal_SW_LL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OverDrivePedal_SW_LL.elf
+ 
+arm-none-eabi-objdump -h -S  OverDrivePedal_SW_LL.elf  > "OverDrivePedal_SW_LL.list"
+arm-none-eabi-objcopy  -O binary  OverDrivePedal_SW_LL.elf  "OverDrivePedal_SW_LL.bin"
+arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7384	    272	   1568	   9224	   2408	OverDrivePedal_SW_LL.elf
+Finished building: default.size.stdout
+Finished building: OverDrivePedal_SW_LL.bin
+ 
+ 
+Finished building: OverDrivePedal_SW_LL.list
+ 

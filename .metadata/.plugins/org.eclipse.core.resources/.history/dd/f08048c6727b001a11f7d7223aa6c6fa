@@ -25,8 +25,7 @@ uint8_t led1_fade_stop = 0;
 uint8_t led2_fade_stop = 1;
 */
 
-//uint8_t pwm_bit_pos = FADE_LOG_SEQ_DATA_SIZE/5;
-uint8_t pwm_bit_pos = 0;
+uint8_t pwm_bit_pos = FADE_LOG_SEQ_DATA_SIZE/5;
 uint8_t pwm_dir_forward = 1;
 /*
 void ledprogram_syncfade()
@@ -125,30 +124,15 @@ void ledprogram_panfade()
 void ledprogram_symcontfade()
 {
 
-	  if(pwm_dir_forward)
-		  pwm_bit_pos++;
-	  else
-		  pwm_bit_pos--;
-
-
-
-	  // change direction at sequence limits
-	  if(pwm_bit_pos >= (FADE_LOG_SEQ_DATA_SIZE-1))
-	  {
-		  //pwm_bit_pos = FADE_LOG_SEQ_DATA_SIZE/5;
-		  pwm_dir_forward = 0;
-		  pwm_bit_pos--;
-	  }
-	  if(pwm_bit_pos < 1)
-	  {
-		  pwm_dir_forward = 1;
-	  }
-
-
-
 	  TIM2->CCR1 = fade_log_seq_data_table[pwm_bit_pos];
 	  TIM2->CCR2 = fade_log_seq_data_table[pwm_bit_pos];
 
+	  pwm_bit_pos++;
+	  if(pwm_bit_pos > (FADE_LOG_SEQ_DATA_SIZE-1))
+	  {
+		  pwm_bit_pos = FADE_LOG_SEQ_DATA_SIZE/5;
+		  pwm_dir_forward = 0;
+	  }
 }
 
 // PWM by log lookup table
@@ -160,7 +144,7 @@ void ledprogram_contfade()
 
 	  pwm_bit_pos++;
 	  if(pwm_bit_pos > (FADE_LOG_SEQ_DATA_SIZE-1))
-		  pwm_bit_pos = 0;
+		  pwm_bit_pos = FADE_LOG_SEQ_DATA_SIZE/5;
 }
 
 // PWM by left-shift

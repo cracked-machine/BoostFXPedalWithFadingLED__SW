@@ -145,7 +145,7 @@ int main(void)
 
 
 	  LL_mDelay(100);
-	  ledprogram_contfade();
+	  ledprogram_symcontfade();
 	  //ledprogram_stepfade();
 
 
