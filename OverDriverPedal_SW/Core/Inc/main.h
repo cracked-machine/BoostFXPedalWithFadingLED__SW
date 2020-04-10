@@ -40,7 +40,7 @@ extern "C" {
 #define ADC_DATA_MAX 1
 extern uint32_t adc_data[ADC_DATA_MAX];
 
-#define LED_PERIOD_LIMIT 2047
+#define LED_PERIOD_LIMIT 512
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
@@ -63,11 +63,11 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define CLEAN_ENABLE_Pin GPIO_PIN_14
 #define CLEAN_ENABLE_GPIO_Port GPIOC
-#define FX_ENABLE_Pin GPIO_PIN_15
-#define FX_ENABLE_GPIO_Port GPIOC
 #define FOOTSW_EXTI4_Pin GPIO_PIN_4
 #define FOOTSW_EXTI4_GPIO_Port GPIOA
 #define FOOTSW_EXTI4_EXTI_IRQn EXTI4_15_IRQn
+#define FX_ENABLE_Pin GPIO_PIN_9
+#define FX_ENABLE_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

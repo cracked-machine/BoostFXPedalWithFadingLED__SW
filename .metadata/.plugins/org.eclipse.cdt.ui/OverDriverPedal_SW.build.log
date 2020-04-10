@@ -1,10 +1,20 @@
-00:23:58 **** Incremental Build of configuration Debug for project OverDriverPedal_SW ****
+04:35:15 **** Incremental Build of configuration Debug for project OverDriverPedal_SW ****
 make -j4 all 
+arm-none-eabi-gcc "../Core/Src/stm32l0xx_it.c" -mcpu=cortex-m0plus -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32L011xx -DDEBUG -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../Drivers/STM32L0xx_HAL_Driver/Inc/Legacy -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32l0xx_it.d" -MT"Core/Src/stm32l0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_it.o"
+arm-none-eabi-gcc -o "OverDriverPedal_SW.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/chris/Projects/Embedded/OverDrivePedal_sw/OverDriverPedal_SW/STM32L011D4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OverDriverPedal_SW.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: OverDriverPedal_SW.elf
+ 
+arm-none-eabi-objdump -h -S  OverDriverPedal_SW.elf  > "OverDriverPedal_SW.list"
+arm-none-eabi-objcopy  -O binary  OverDriverPedal_SW.elf  "OverDriverPedal_SW.bin"
 arm-none-eabi-size   OverDriverPedal_SW.elf 
    text	   data	    bss	    dec	    hex	filename
-  14528	     16	   1912	  16456	   4048	OverDriverPedal_SW.elf
+  13488	     16	   1912	  15416	   3c38	OverDriverPedal_SW.elf
 Finished building: default.size.stdout
  
+Finished building: OverDriverPedal_SW.bin
+ 
+Finished building: OverDriverPedal_SW.list
+ 
 
-00:23:58 Build Finished. 0 errors, 0 warnings. (took 529ms)
+04:35:16 Build Finished. 0 errors, 0 warnings. (took 838ms)
 

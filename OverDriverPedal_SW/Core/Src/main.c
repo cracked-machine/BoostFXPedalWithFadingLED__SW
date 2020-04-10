@@ -112,16 +112,19 @@ int main(void)
   // debounce timer
   HAL_TIM_Base_Start_IT(&htim21);
 
+  // led fade timer
   HAL_LPTIM_Counter_Start_IT(&hlptim1, LED_PERIOD_LIMIT);
   LPTIM1->CFGR |= LPTIM_CFGR_PRESC_0 | LPTIM_CFGR_PRESC_1 | LPTIM_CFGR_PRESC_2;
-  LPTIM1->ARR = 1536;
+  LPTIM1->ARR = 512;
 
   // init bypass switch (clean signal default)
+
   HAL_GPIO_WritePin(CLEAN_ENABLE_GPIO_Port, CLEAN_ENABLE_Pin, 1);
   HAL_GPIO_WritePin(FX_ENABLE_GPIO_Port, FX_ENABLE_Pin, 0);
 
 
-  HAL_ADC_Start_DMA(&hadc, adc_data, ADC_DATA_MAX);
+
+  //HAL_ADC_Start_DMA(&hadc, adc_data, ADC_DATA_MAX);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -155,10 +158,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
-  RCC_OscInitStruct.PLL.PLLMUL = RCC_PLLMUL_4;
-  RCC_OscInitStruct.PLL.PLLDIV = RCC_PLLDIV_4;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -167,7 +167,7 @@ void SystemClock_Config(void)
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
