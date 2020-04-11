@@ -105,8 +105,8 @@ int main(void)
   LL_TIM_CC_EnableChannel(TIM2, LL_TIM_CHANNEL_CH2);
 
   LL_TIM_EnableCounter(TIM2);
-  TIM2->PSC = 0;
-  TIM2->ARR = 128;
+  TIM2->PSC = 2;
+  TIM2->ARR = 4096;
   // init the PWM duty to 0%
   TIM2->CCR1 = 0;
   TIM2->CCR2 = 0;
@@ -145,7 +145,7 @@ int main(void)
 
 	  if(FX_ENABLE_GPIO_Port->ODR)
 	  {
-		  LL_mDelay(75);
+		  LL_mDelay(100);
 		  //ledprogram_contfade();
 		  ledprogram_symcontfade();
 		  //ledprogram_stepfade();

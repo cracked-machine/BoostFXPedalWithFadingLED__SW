@@ -1,6 +1,6 @@
-18:25:47 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
+22:49:59 **** Incremental Build of configuration Debug for project OverDrivePedal_SW_LL ****
 make -j4 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32l0xx_it.c" -mcpu=cortex-m0plus -std=gnu11 -g3 '-DHSE_VALUE=8000000' '-DHSE_STARTUP_TIMEOUT=100' '-DHSI_VALUE=16000000' -DDEBUG '-DLSE_STARTUP_TIMEOUT=5000' '-DLSE_VALUE=32768' '-DDATA_CACHE_ENABLE=1' '-DLSI_VALUE=37000' '-DMSI_VALUE=2097000' '-DVDD_VALUE=3300' '-DINSTRUCTION_CACHE_ENABLE=1' -DSTM32L011xx -DUSE_FULL_LL_DRIVER '-DPREFETCH_ENABLE=0' -c -I../Drivers/CMSIS/Include -I../Core/Inc -I../Drivers/STM32L0xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I"/home/chris/Projects/Python/LogSequenceGeneration" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32l0xx_it.d" -MT"Core/Src/stm32l0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32l0xx_it.o"
 arm-none-eabi-gcc -o "OverDrivePedal_SW_LL.elf" @"objects.list"   -mcpu=cortex-m0plus -T"/home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/STM32L011D4PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="OverDrivePedal_SW_LL.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: OverDrivePedal_SW_LL.elf
  
@@ -8,13 +8,13 @@ arm-none-eabi-objdump -h -S  OverDrivePedal_SW_LL.elf  > "OverDrivePedal_SW_LL.l
 arm-none-eabi-objcopy  -O binary  OverDrivePedal_SW_LL.elf  "OverDrivePedal_SW_LL.bin"
 arm-none-eabi-size   OverDrivePedal_SW_LL.elf 
    text	   data	    bss	    dec	    hex	filename
-   7588	     80	   1568	   9236	   2414	OverDrivePedal_SW_LL.elf
-Finished building: default.size.stdout
+   7836	    144	   1568	   9548	   254c	OverDrivePedal_SW_LL.elf
 Finished building: OverDrivePedal_SW_LL.bin
- 
- 
 Finished building: OverDrivePedal_SW_LL.list
  
+Finished building: default.size.stdout
+ 
+ 
 
-18:25:48 Build Finished. 0 errors, 0 warnings. (took 683ms)
+22:50:00 Build Finished. 0 errors, 0 warnings. (took 761ms)
 

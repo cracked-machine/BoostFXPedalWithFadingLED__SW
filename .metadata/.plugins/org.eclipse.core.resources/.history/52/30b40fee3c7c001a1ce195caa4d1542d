@@ -157,12 +157,12 @@ void EXTI4_15_IRQHandler(void)
 	if ((interrupt_time - last_interrupt_time) > MAX_DEBOUNCE_DELAY)
 	{
 		// flash leds to indicate bypass switch
-
+/*
 		if(CLEAN_ENABLE_GPIO_Port->ODR)
-			ledprogram_flash(4, 100);				// slower for fx enable
+			ledprogram_flash(2, 100);				// slower for fx enable
 		else
-			ledprogram_resetall();
-
+			ledprogram_flash(1, 100);				// faster for clean enable
+*/
 		// toggle bypass soft switches
 		CLEAN_ENABLE_GPIO_Port->ODR ^= CLEAN_ENABLE_Pin;
 		FX_ENABLE_GPIO_Port->ODR ^= FX_ENABLE_Pin;

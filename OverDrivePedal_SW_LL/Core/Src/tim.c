@@ -41,18 +41,19 @@ void MX_TIM2_Init(void)
   LL_TIM_Init(TIM2, &TIM_InitStruct);
   LL_TIM_DisableARRPreload(TIM2);
   LL_TIM_OC_EnablePreload(TIM2, LL_TIM_CHANNEL_CH1);
-  TIM_OC_InitStruct.OCMode = LL_TIM_OCMODE_PWM1;
+  TIM_OC_InitStruct.OCMode = LL_TIM_OCMODE_PWM2;
   TIM_OC_InitStruct.OCState = LL_TIM_OCSTATE_DISABLE;
   TIM_OC_InitStruct.CompareValue = 0;
   TIM_OC_InitStruct.OCPolarity = LL_TIM_OCPOLARITY_HIGH;
   LL_TIM_OC_Init(TIM2, LL_TIM_CHANNEL_CH1, &TIM_OC_InitStruct);
-  LL_TIM_OC_DisableFast(TIM2, LL_TIM_CHANNEL_CH1);
+  LL_TIM_OC_EnableFast(TIM2, LL_TIM_CHANNEL_CH1);
   LL_TIM_OC_EnablePreload(TIM2, LL_TIM_CHANNEL_CH2);
   TIM_OC_InitStruct.OCState = LL_TIM_OCSTATE_DISABLE;
   LL_TIM_OC_Init(TIM2, LL_TIM_CHANNEL_CH2, &TIM_OC_InitStruct);
-  LL_TIM_OC_DisableFast(TIM2, LL_TIM_CHANNEL_CH2);
+  LL_TIM_OC_EnableFast(TIM2, LL_TIM_CHANNEL_CH2);
   LL_TIM_SetTriggerOutput(TIM2, LL_TIM_TRGO_RESET);
   LL_TIM_DisableMasterSlaveMode(TIM2);
+  LL_TIM_OC_DisablePreload(TIM2, LL_TIM_CHANNEL_CH2);
   LL_IOP_GRP1_EnableClock(LL_IOP_GRP1_PERIPH_GPIOA);
     /**TIM2 GPIO Configuration    
     PA0-CK_IN     ------> TIM2_CH1

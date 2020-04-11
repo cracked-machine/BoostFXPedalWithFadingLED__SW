@@ -7130,3 +7130,171 @@
 2020-04-11 13:01:57,545 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 1404mS.
 2020-04-11 13:01:57,546 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
 2020-04-11 13:01:57,546 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-04-11 21:45:21,990 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 319572752 Bytes (1016070144)
+2020-04-11 21:45:22,105 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 326909464 Bytes (1016070144)
+2020-04-11 21:45:22,265 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 332545568 Bytes (1016070144)
+2020-04-11 21:45:22,558 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: LPTIM
+2020-04-11 21:45:22,559 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-04-11 21:45:22,559 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-04-11 21:45:22,559 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-04-11 21:45:22,559 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8L0
+2020-04-11 21:45:22,559 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8L0
+2020-04-11 21:45:22,559 [INFO] CodeGenerator:603 - code generatio: config db path: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db/
+2020-04-11 21:45:22,760 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/MXTmpFiles/license.tmp_save
+2020-04-11 21:45:22,824 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/MXTmpFiles/license.tmp
+2020-04-11 21:45:22,935 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/gpio.c_save
+2020-04-11 21:45:23,004 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/gpio.c
+2020-04-11 21:45:23,005 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/gpio.h_save
+2020-04-11 21:45:23,068 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/gpio.h
+2020-04-11 21:45:23,513 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-11 21:45:23,514 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for LPTIM
+2020-04-11 21:45:23,514 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-11 21:45:23,517 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/lptim.c_save
+2020-04-11 21:45:23,609 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/lptim.c
+2020-04-11 21:45:23,611 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/lptim.h_save
+2020-04-11 21:45:23,672 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/lptim.h
+2020-04-11 21:45:23,673 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-11 21:45:23,673 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2020-04-11 21:45:23,674 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-11 21:45:23,676 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/tim.c_save
+2020-04-11 21:45:23,775 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/tim.c
+2020-04-11 21:45:23,777 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/tim.h_save
+2020-04-11 21:45:23,842 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/tim.h
+2020-04-11 21:45:23,843 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-04-11 21:45:23,843 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-11 21:45:23,846 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/stm32l0xx_it.c_save
+2020-04-11 21:45:23,922 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/stm32l0xx_it.c
+2020-04-11 21:45:23,924 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/stm32l0xx_it.h_save
+2020-04-11 21:45:24,091 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/stm32l0xx_it.h
+2020-04-11 21:45:24,094 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/MXTmpFiles/system.tmp_save
+2020-04-11 21:45:24,165 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/MXTmpFiles/system.tmp
+2020-04-11 21:45:24,166 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/stm32_assert.h_save
+2020-04-11 21:45:24,232 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/stm32_assert.h
+2020-04-11 21:45:24,234 [WARN] IPConfigManager:2341 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2020-04-11 21:45:24,235 [WARN] IPConfigManager:2341 - Warning: the RefConfig RCC_LSEDRIVE_CONFIG is not available in your config.xml file
+2020-04-11 21:45:24,240 [WARN] IPConfigManager:2341 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2020-04-11 21:45:24,240 [WARN] IPConfigManager:2341 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2020-04-11 21:45:24,240 [WARN] IPConfigManager:2341 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2020-04-11 21:45:24,240 [WARN] IPConfigManager:2341 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2020-04-11 21:45:24,245 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/main.h_save
+2020-04-11 21:45:24,315 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/main.h
+2020-04-11 21:45:24,317 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/main.c_save
+2020-04-11 21:45:24,401 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/main.c
+2020-04-11 21:45:24,852 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 9mS.
+2020-04-11 21:45:24,855 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-04-11 21:45:25,114 [INFO] ConfigFileManager:1066 - The Die is : DIE457
+2020-04-11 21:45:26,860 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 2005mS.
+2020-04-11 21:45:26,860 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-04-11 21:45:26,861 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-04-11 21:45:52,247 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 454385048 Bytes (1073741824)
+2020-04-11 21:45:52,405 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 462247328 Bytes (1073741824)
+2020-04-11 21:45:52,550 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 468016536 Bytes (1073741824)
+2020-04-11 21:45:52,770 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: LPTIM
+2020-04-11 21:45:52,771 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-04-11 21:45:52,771 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-04-11 21:45:52,771 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-04-11 21:45:52,771 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8L0
+2020-04-11 21:45:52,771 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8L0
+2020-04-11 21:45:52,771 [INFO] CodeGenerator:603 - code generatio: config db path: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db/
+2020-04-11 21:45:52,960 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/MXTmpFiles/license.tmp_save
+2020-04-11 21:45:53,021 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/MXTmpFiles/license.tmp
+2020-04-11 21:45:53,146 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/gpio.c_save
+2020-04-11 21:45:53,308 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/gpio.c
+2020-04-11 21:45:53,310 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/gpio.h_save
+2020-04-11 21:45:53,377 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/gpio.h
+2020-04-11 21:45:53,925 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-11 21:45:53,926 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for LPTIM
+2020-04-11 21:45:53,926 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-11 21:45:53,929 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/lptim.c_save
+2020-04-11 21:45:54,022 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/lptim.c
+2020-04-11 21:45:54,024 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/lptim.h_save
+2020-04-11 21:45:54,089 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/lptim.h
+2020-04-11 21:45:54,090 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-11 21:45:54,091 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2020-04-11 21:45:54,092 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-11 21:45:54,095 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/tim.c_save
+2020-04-11 21:45:54,194 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/tim.c
+2020-04-11 21:45:54,196 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/tim.h_save
+2020-04-11 21:45:54,258 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/tim.h
+2020-04-11 21:45:54,259 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-04-11 21:45:54,259 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-11 21:45:54,262 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/stm32l0xx_it.c_save
+2020-04-11 21:45:54,337 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/stm32l0xx_it.c
+2020-04-11 21:45:54,339 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/stm32l0xx_it.h_save
+2020-04-11 21:45:54,402 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/stm32l0xx_it.h
+2020-04-11 21:45:54,405 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/MXTmpFiles/system.tmp_save
+2020-04-11 21:45:54,466 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/MXTmpFiles/system.tmp
+2020-04-11 21:45:54,467 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/stm32_assert.h_save
+2020-04-11 21:45:54,529 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/stm32_assert.h
+2020-04-11 21:45:54,531 [WARN] IPConfigManager:2341 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2020-04-11 21:45:54,531 [WARN] IPConfigManager:2341 - Warning: the RefConfig RCC_LSEDRIVE_CONFIG is not available in your config.xml file
+2020-04-11 21:45:54,536 [WARN] IPConfigManager:2341 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2020-04-11 21:45:54,536 [WARN] IPConfigManager:2341 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2020-04-11 21:45:54,536 [WARN] IPConfigManager:2341 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2020-04-11 21:45:54,536 [WARN] IPConfigManager:2341 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2020-04-11 21:45:54,541 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/main.h_save
+2020-04-11 21:45:54,609 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/main.h
+2020-04-11 21:45:54,611 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/main.c_save
+2020-04-11 21:45:54,694 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/main.c
+2020-04-11 21:45:55,139 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 9mS.
+2020-04-11 21:45:55,141 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-04-11 21:45:55,506 [INFO] ConfigFileManager:1066 - The Die is : DIE457
+2020-04-11 21:45:56,981 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 1840mS.
+2020-04-11 21:45:56,982 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 1mS.
+2020-04-11 21:45:56,982 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-04-11 21:46:29,318 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 242337320 Bytes (1073741824)
+2020-04-11 21:46:29,480 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 250639152 Bytes (1073741824)
+2020-04-11 21:46:29,612 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 256930608 Bytes (1073741824)
+2020-04-11 21:46:29,798 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: LPTIM
+2020-04-11 21:46:29,798 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: NVIC
+2020-04-11 21:46:29,798 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: SYS
+2020-04-11 21:46:29,798 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: GPIO
+2020-04-11 21:46:29,798 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8L0
+2020-04-11 21:46:29,799 [INFO] BlockDiagram:2671 - set Specific Code input for plugin: TIM1_8L0
+2020-04-11 21:46:29,799 [INFO] CodeGenerator:603 - code generatio: config db path: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db/
+2020-04-11 21:46:29,970 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/MXTmpFiles/license.tmp_save
+2020-04-11 21:46:30,030 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/MXTmpFiles/license.tmp
+2020-04-11 21:46:30,147 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/gpio.c_save
+2020-04-11 21:46:30,216 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/gpio.c
+2020-04-11 21:46:30,218 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/gpio.h_save
+2020-04-11 21:46:30,283 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/gpio.h
+2020-04-11 21:46:30,940 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-11 21:46:30,941 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for LPTIM
+2020-04-11 21:46:30,942 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-11 21:46:30,944 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/lptim.c_save
+2020-04-11 21:46:31,051 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/lptim.c
+2020-04-11 21:46:31,053 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/lptim.h_save
+2020-04-11 21:46:31,119 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/lptim.h
+2020-04-11 21:46:31,120 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line
+2020-04-11 21:46:31,121 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for TIM
+2020-04-11 21:46:31,122 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-11 21:46:31,125 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/tim.c_save
+2020-04-11 21:46:31,222 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/tim.c
+2020-04-11 21:46:31,224 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/tim.h_save
+2020-04-11 21:46:31,284 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/tim.h
+2020-04-11 21:46:31,285 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Debug : prepare data for NVIC
+2020-04-11 21:46:31,285 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] Command line test
+2020-04-11 21:46:31,287 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/stm32l0xx_it.c_save
+2020-04-11 21:46:31,362 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/stm32l0xx_it.c
+2020-04-11 21:46:31,364 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/stm32l0xx_it.h_save
+2020-04-11 21:46:31,431 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/stm32l0xx_it.h
+2020-04-11 21:46:31,434 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/MXTmpFiles/system.tmp_save
+2020-04-11 21:46:31,494 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/MXTmpFiles/system.tmp
+2020-04-11 21:46:31,498 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/stm32_assert.h_save
+2020-04-11 21:46:31,558 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/stm32_assert.h
+2020-04-11 21:46:31,561 [WARN] IPConfigManager:2341 - Warning: the RefConfig RCC_ConfigVoltageScaling is not available in your config.xml file
+2020-04-11 21:46:31,561 [WARN] IPConfigManager:2341 - Warning: the RefConfig RCC_LSEDRIVE_CONFIG is not available in your config.xml file
+2020-04-11 21:46:31,565 [WARN] IPConfigManager:2341 - Warning: the RefConfig RCC_ClockConfig is not available in your config.xml file
+2020-04-11 21:46:31,565 [WARN] IPConfigManager:2341 - Warning: the RefConfig RCC_MCO1Config is not available in your config.xml file
+2020-04-11 21:46:31,566 [WARN] IPConfigManager:2341 - Warning: the RefConfig RCC_interrupt_Time_SYSTICK_Config is not available in your config.xml file
+2020-04-11 21:46:31,566 [WARN] IPConfigManager:2341 - Warning: the RefConfig RCC_SYSTICK_CONFIG is not available in your config.xml file
+2020-04-11 21:46:31,597 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/main.h_save
+2020-04-11 21:46:31,683 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Inc/main.h
+2020-04-11 21:46:31,685 [INFO] CodeEngine:188 - oldGeneratedFile, /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/main.c_save
+2020-04-11 21:46:31,771 [INFO] CodeEngine:206 - Generated code: /home/chris/Projects/Embedded/OverDrivePedal_sw/OverDrivePedal_SW_LL/Core/Src/main.c
+2020-04-11 21:46:32,231 [INFO] ProjectBuilder:2002 - Time for Copy HAL[1] : 9mS.
+2020-04-11 21:46:32,233 [INFO] ProjectBuilder:2727 - Project Generator version: 3.7.1
+2020-04-11 21:46:32,485 [INFO] ConfigFileManager:1066 - The Die is : DIE457
+2020-04-11 21:46:34,249 [INFO] ProjectBuilder:2894 - Time for Generating toolchain IDE Files: 2016mS.
+2020-04-11 21:46:34,250 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.
+2020-04-11 21:46:34,250 [INFO] ProjectBuilder:1878 - Time for Copy CMSIS : 0mS.

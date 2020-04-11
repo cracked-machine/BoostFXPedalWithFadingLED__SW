@@ -8,8 +8,7 @@
 #include "ledprograms.h"
 
 #include "tim.h"
-#include "fade_log_seq.h"			// even space fade sequence
-//#include "fade_lin_seq.h"			// 90%-on fade sequence
+#include "fade_log_seq.h"
 
 #define LED_PERIOD_LIMIT 512
 
@@ -87,10 +86,12 @@ void ledprogram_flash(uint8_t num, uint8_t delay)
 {
 	for(uint8_t seq = 0; seq < num; seq++)
 	{
-		  TIM2->CCR1 ^= 0x30;
-		  TIM2->CCR2 ^= 0x30;
+		  TIM2->CCR1 = 65535;
+		  TIM2->CCR2 = 65535;
 		  LL_mDelay(delay);
-
+		  TIM2->CCR1 = 0;
+		  TIM2->CCR2 = 0;
+		  LL_mDelay(delay);
 	}
 }
 

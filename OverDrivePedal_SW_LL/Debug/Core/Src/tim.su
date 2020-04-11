@@ -4,10 +4,11 @@ stm32l0xx_ll_bus.h:440:22:LL_APB1_GRP1_EnableClock	24	static
 stm32l0xx_ll_bus.h:786:22:LL_APB2_GRP1_EnableClock	24	static
 stm32l0xx_ll_bus.h:987:22:LL_IOP_GRP1_EnableClock	24	static
 stm32l0xx_ll_tim.h:1074:22:LL_TIM_DisableARRPreload	16	static
-stm32l0xx_ll_tim.h:1482:22:LL_TIM_OC_DisableFast	24	static
+stm32l0xx_ll_tim.h:1460:22:LL_TIM_OC_EnableFast	24	static
 stm32l0xx_ll_tim.h:1526:22:LL_TIM_OC_EnablePreload	24	static
+stm32l0xx_ll_tim.h:1547:22:LL_TIM_OC_DisablePreload	24	static
 stm32l0xx_ll_tim.h:2198:22:LL_TIM_SetClockSource	16	static
 stm32l0xx_ll_tim.h:2244:22:LL_TIM_SetTriggerOutput	16	static
 stm32l0xx_ll_tim.h:2310:22:LL_TIM_DisableMasterSlaveMode	16	static
 tim.c:28:6:MX_TIM2_Init	72	static
-tim.c:79:6:MX_TIM21_Init	24	static
+tim.c:80:6:MX_TIM21_Init	24	static
