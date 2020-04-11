@@ -1,3 +1,5 @@
-ledprograms.c:125:6:ledprogram_symcontfade	8	static
-ledprograms.c:155:6:ledprogram_contfade	8	static
-ledprograms.c:167:6:ledprogram_stepfade	8	static
+ledprograms.c:22:6:ledprogram_symcontfade	8	static
+ledprograms.c:52:6:ledprogram_contfade	8	static
+ledprograms.c:64:6:ledprogram_stepfade	8	static
+ledprograms.c:77:6:ledprogram_resetall	8	static
+ledprograms.c:85:6:ledprogram_flash	24	static

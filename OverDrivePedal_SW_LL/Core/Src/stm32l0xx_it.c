@@ -23,6 +23,7 @@
 #include "stm32l0xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "ledprograms.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -155,6 +156,13 @@ void EXTI4_15_IRQHandler(void)
 	uint16_t interrupt_time = TIM21->CNT;
 	if ((interrupt_time - last_interrupt_time) > MAX_DEBOUNCE_DELAY)
 	{
+		// flash leds to indicate bypass switch
+/*
+		if(CLEAN_ENABLE_GPIO_Port->ODR)
+			ledprogram_flash(2, 100);				// slower for fx enable
+		else
+			ledprogram_flash(1, 100);				// faster for clean enable
+*/
 		// toggle bypass soft switches
 		CLEAN_ENABLE_GPIO_Port->ODR ^= CLEAN_ENABLE_Pin;
 		FX_ENABLE_GPIO_Port->ODR ^= FX_ENABLE_Pin;

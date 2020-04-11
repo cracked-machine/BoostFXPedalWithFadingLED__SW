@@ -10,16 +10,10 @@
 
 #include <stdint.h>
 
-/*
-void ledprogram_syncfade();
-void ledprogram_panfade();
-*/
 void ledprogram_contfade();
 void ledprogram_stepfade();
 void ledprogram_symcontfade();
-/*
-uint8_t get_pwm_bit_pos();
-void increment_pwm_bit_pos();
-void reset_pwm_bit_pos();
-*/
+void ledprogram_resetall();
+void ledprogram_flash(uint8_t num, uint8_t delay);
+
 #endif /* INC_LEDPROGRAMS_H_ */
