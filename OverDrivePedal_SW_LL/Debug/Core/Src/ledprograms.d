@@ -19,7 +19,7 @@ Core/Src/ledprograms.o: ../Core/Src/ledprograms.c \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_dma.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_tim.h \
  ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_gpio.h \
- /home/chris/Projects/Python/LogSequenceGeneration/fade_log_seq.h
+ /home/chris/Projects/Embedded/OverDrivePedal_sw/LogSequenceGeneration/fade_log_seq.h
 
 ../Core/Inc/ledprograms.h:
 
@@ -65,4 +65,4 @@ Core/Src/ledprograms.o: ../Core/Src/ledprograms.c \
 
 ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_gpio.h:
 
-/home/chris/Projects/Python/LogSequenceGeneration/fade_log_seq.h:
+/home/chris/Projects/Embedded/OverDrivePedal_sw/LogSequenceGeneration/fade_log_seq.h:

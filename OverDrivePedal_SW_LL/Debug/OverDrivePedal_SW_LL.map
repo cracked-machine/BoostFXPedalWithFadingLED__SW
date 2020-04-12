@@ -1874,19 +1874,19 @@ OUTPUT(OverDrivePedal_SW_LL.elf elf32-littlearm)
  .debug_macro   0x000000000000af77      0x570 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.o
  .debug_macro   0x000000000000b4e7      0x165 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.o
 
-.debug_line     0x0000000000000000     0x4822
+.debug_line     0x0000000000000000     0x4836
  .debug_line    0x0000000000000000      0x646 Core/Src/gpio.o
- .debug_line    0x0000000000000646      0x665 Core/Src/ledprograms.o
- .debug_line    0x0000000000000cab      0x65a Core/Src/lptim.o
- .debug_line    0x0000000000001305      0x7f8 Core/Src/main.o
- .debug_line    0x0000000000001afd      0x66f Core/Src/stm32l0xx_it.o
- .debug_line    0x000000000000216c      0x483 Core/Src/system_stm32l0xx.o
- .debug_line    0x00000000000025ef      0x76d Core/Src/tim.o
- .debug_line    0x0000000000002d5c       0x9e Core/Startup/startup_stm32l011d4px.o
- .debug_line    0x0000000000002dfa      0x584 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.o
- .debug_line    0x000000000000337e      0x5ad Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.o
- .debug_line    0x000000000000392b      0x792 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.o
- .debug_line    0x00000000000040bd      0x765 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.o
+ .debug_line    0x0000000000000646      0x679 Core/Src/ledprograms.o
+ .debug_line    0x0000000000000cbf      0x65a Core/Src/lptim.o
+ .debug_line    0x0000000000001319      0x7f8 Core/Src/main.o
+ .debug_line    0x0000000000001b11      0x66f Core/Src/stm32l0xx_it.o
+ .debug_line    0x0000000000002180      0x483 Core/Src/system_stm32l0xx.o
+ .debug_line    0x0000000000002603      0x76d Core/Src/tim.o
+ .debug_line    0x0000000000002d70       0x9e Core/Startup/startup_stm32l011d4px.o
+ .debug_line    0x0000000000002e0e      0x584 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.o
+ .debug_line    0x0000000000003392      0x5ad Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.o
+ .debug_line    0x000000000000393f      0x792 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.o
+ .debug_line    0x00000000000040d1      0x765 Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.o
 
 .debug_str      0x0000000000000000    0x3ac0f
  .debug_str     0x0000000000000000    0x3807a Core/Src/gpio.o

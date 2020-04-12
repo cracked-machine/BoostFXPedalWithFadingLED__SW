@@ -34,7 +34,7 @@
 		<link>
 			<name>LogSequenceGeneration</name>
 			<type>2</type>
-			<location>/home/chris/Projects/Python/LogSequenceGeneration</location>
+			<location>/home/chris/Projects/Embedded/OverDrivePedal_sw/LogSequenceGeneration</location>
 		</link>
 	</linkedResources>
 </projectDescription>

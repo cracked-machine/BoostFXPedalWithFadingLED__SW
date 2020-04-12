@@ -37,13 +37,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
  16 .debug_macro  0000b64c  00000000  00000000  000269f0  2**0
                   CONTENTS, READONLY, DEBUGGING
- 17 .debug_line   00004822  00000000  00000000  0003203c  2**0
+ 17 .debug_line   00004836  00000000  00000000  0003203c  2**0
                   CONTENTS, READONLY, DEBUGGING
- 18 .debug_str    0003ac0f  00000000  00000000  0003685e  2**0
+ 18 .debug_str    0003ac0f  00000000  00000000  00036872  2**0
                   CONTENTS, READONLY, DEBUGGING
- 19 .comment      0000007b  00000000  00000000  0007146d  2**0
+ 19 .comment      0000007b  00000000  00000000  00071481  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00001368  00000000  00000000  000714e8  2**2
+ 20 .debug_frame  00001368  00000000  00000000  000714fc  2**2
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -2083,8 +2083,8 @@ int main(void)
  8000cc2:	2b00      	cmp	r3, #0
  8000cc4:	d005      	beq.n	8000cd2 <main+0xce>
 	  {
-		  LL_mDelay(75);
- 8000cc6:	204b      	movs	r0, #75	; 0x4b
+		  LL_mDelay(50);
+ 8000cc6:	2032      	movs	r0, #50	; 0x32
  8000cc8:	f001 f870 	bl	8001dac <LL_mDelay>
 		  //ledprogram_contfade();
 		  ledprogram_symcontfade();

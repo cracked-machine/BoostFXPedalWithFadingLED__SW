@@ -145,7 +145,7 @@ int main(void)
 
 	  if(FX_ENABLE_GPIO_Port->ODR)
 	  {
-		  LL_mDelay(50);
+		  LL_mDelay(75);
 		  //ledprogram_contfade();
 		  ledprogram_symcontfade();
 		  //ledprogram_stepfade();
