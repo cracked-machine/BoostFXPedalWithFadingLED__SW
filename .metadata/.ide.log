@@ -7432,3 +7432,260 @@
 
 
 2020-04-12 16:38:21,049 [INFO] Activator:177 - !SESSION log4j initialized
+2020-04-20 23:53:12,142 [INFO] Activator:176 - 
+
+
+2020-04-20 23:53:12,146 [INFO] Activator:177 - !SESSION log4j initialized
+2020-04-21 19:42:55,707 [INFO] Activator:176 - 
+
+
+2020-04-21 19:42:55,712 [INFO] Activator:177 - !SESSION log4j initialized
+2020-04-21 23:33:18,274 [INFO] ApplicationProperties:181 - Using Application install path: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639
+2020-04-21 23:33:18,290 [INFO] DbMcusXml:72 - Set database path to: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//mcu/
+2020-04-21 23:33:18,295 [INFO] DbBoardsPdsc:54 - Set plugin database path to: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/boardmanager/
+2020-04-21 23:33:18,295 [INFO] DbMcus:235 - Set plugin images path to: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/mcufinder/images/
+2020-04-21 23:33:18,296 [INFO] DbBoards:232 - Set plugin images path to: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/mcufinder/images/
+2020-04-21 23:33:18,314 [INFO] DbMcusAds:85 - Set database path to: /home/chris/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-21 23:33:18,316 [INFO] DbMcusDocs:108 - Set database path to: /home/chris/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-21 23:33:18,318 [INFO] DbMcusJson:61 - Set database path to: /home/chris/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-21 23:33:18,319 [INFO] DbBoardsDocs:97 - Set database path to: /home/chris/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-21 23:33:18,321 [INFO] DbBoardsJson:51 - Set database path to: /home/chris/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-21 23:33:18,499 [INFO] CrossReferenceDbSqlite:197 - Set database path to: /home/chris/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-04-21 23:33:18,616 [INFO] RulesReader:52 - Compatibility file has been processed (208 Rules)
+2020-04-21 23:33:18,691 [INFO] MicroXplorer:570 - Detected Java Version = 1.8.0_202
+2020-04-21 23:33:18,691 [INFO] DbMcusXml:72 - Set database path to: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//mcu/
+2020-04-21 23:33:18,692 [INFO] DbBoardsPdsc:54 - Set plugin database path to: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/boardmanager/
+2020-04-21 23:33:18,692 [INFO] DbMcus:235 - Set plugin images path to: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/mcufinder/images/
+2020-04-21 23:33:18,693 [INFO] DbBoards:232 - Set plugin images path to: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/mcufinder/images/
+2020-04-21 23:33:18,693 [WARN] DbFile:36 - Overriding database path with different value: /home/chris/.stmcufinder/plugins/mcufinder/ => /home/chris/.stmcufinder/plugins/mcufinder
+2020-04-21 23:33:18,693 [INFO] DbMcusAds:85 - Set database path to: /home/chris/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-21 23:33:18,694 [WARN] DbFile:36 - Overriding database path with different value: /home/chris/.stmcufinder/plugins/mcufinder/ => /home/chris/.stmcufinder/plugins/mcufinder
+2020-04-21 23:33:18,694 [INFO] DbMcusDocs:108 - Set database path to: /home/chris/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-21 23:33:18,694 [WARN] DbFile:36 - Overriding database path with different value: /home/chris/.stmcufinder/plugins/mcufinder/ => /home/chris/.stmcufinder/plugins/mcufinder
+2020-04-21 23:33:18,694 [INFO] DbMcusJson:61 - Set database path to: /home/chris/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-21 23:33:18,694 [WARN] DbFile:36 - Overriding database path with different value: /home/chris/.stmcufinder/plugins/mcufinder/ => /home/chris/.stmcufinder/plugins/mcufinder
+2020-04-21 23:33:18,695 [INFO] DbBoardsDocs:97 - Set database path to: /home/chris/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-21 23:33:18,695 [WARN] DbFile:36 - Overriding database path with different value: /home/chris/.stmcufinder/plugins/mcufinder/ => /home/chris/.stmcufinder/plugins/mcufinder
+2020-04-21 23:33:18,695 [INFO] DbBoardsJson:51 - Set database path to: /home/chris/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-21 23:33:18,695 [WARN] DbFile:36 - Overriding database path with different value: /home/chris/.stmcufinder/plugins/mcufinder/ => /home/chris/.stmcufinder/plugins/mcufinder
+2020-04-21 23:33:18,695 [WARN] DbFile:36 - Overriding database path with different value: /home/chris/.stmcufinder/plugins/mcufinder/ => /home/chris/.stmcufinder/plugins/mcufinder
+2020-04-21 23:33:18,696 [INFO] CrossReferenceDbSqlite:197 - Set database path to: /home/chris/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-04-21 23:33:18,770 [INFO] MainPanel:181 - HeapMemory: 308281344
+2020-04-21 23:33:18,866 [INFO] DbMcusXml:72 - Set database path to: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//mcu/
+2020-04-21 23:33:18,867 [INFO] DbBoardsPdsc:54 - Set plugin database path to: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/boardmanager/
+2020-04-21 23:33:18,867 [INFO] DbMcus:235 - Set plugin images path to: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/mcufinder/images/
+2020-04-21 23:33:18,867 [INFO] DbBoards:232 - Set plugin images path to: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//plugins/mcufinder/images/
+2020-04-21 23:33:18,868 [WARN] DbFile:36 - Overriding database path with different value: /home/chris/.stmcufinder/plugins/mcufinder/ => /home/chris/.stmcufinder/plugins/mcufinder
+2020-04-21 23:33:18,869 [INFO] DbMcusAds:85 - Set database path to: /home/chris/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-21 23:33:18,869 [WARN] DbFile:36 - Overriding database path with different value: /home/chris/.stmcufinder/plugins/mcufinder/ => /home/chris/.stmcufinder/plugins/mcufinder
+2020-04-21 23:33:18,869 [INFO] DbMcusDocs:108 - Set database path to: /home/chris/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-21 23:33:18,869 [WARN] DbFile:36 - Overriding database path with different value: /home/chris/.stmcufinder/plugins/mcufinder/ => /home/chris/.stmcufinder/plugins/mcufinder
+2020-04-21 23:33:18,870 [INFO] DbMcusJson:61 - Set database path to: /home/chris/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-21 23:33:18,870 [WARN] DbFile:36 - Overriding database path with different value: /home/chris/.stmcufinder/plugins/mcufinder/ => /home/chris/.stmcufinder/plugins/mcufinder
+2020-04-21 23:33:18,870 [INFO] DbBoardsDocs:97 - Set database path to: /home/chris/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-21 23:33:18,870 [WARN] DbFile:36 - Overriding database path with different value: /home/chris/.stmcufinder/plugins/mcufinder/ => /home/chris/.stmcufinder/plugins/mcufinder
+2020-04-21 23:33:18,870 [INFO] DbBoardsJson:51 - Set database path to: /home/chris/.stmcufinder/plugins/mcufinder//mcu/
+2020-04-21 23:33:18,871 [WARN] DbFile:36 - Overriding database path with different value: /home/chris/.stmcufinder/plugins/mcufinder/ => /home/chris/.stmcufinder/plugins/mcufinder
+2020-04-21 23:33:18,871 [WARN] DbFile:36 - Overriding database path with different value: /home/chris/.stmcufinder/plugins/mcufinder/ => /home/chris/.stmcufinder/plugins/mcufinder
+2020-04-21 23:33:18,871 [INFO] CrossReferenceDbSqlite:197 - Set database path to: /home/chris/.stmcufinder/plugins/mcufinder//mcu/cs/
+2020-04-21 23:33:18,887 [INFO] ApplicationProperties:181 - Using Application install path: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639
+2020-04-21 23:33:18,889 [INFO] PluginManage:178 - Search for loadable plugins [exclusion list=, tutovideos]
+2020-04-21 23:33:18,891 [INFO] PluginManage:292 - Check plugin analytics
+2020-04-21 23:33:18,899 [INFO] PluginManage:342 - Loaded plugin analytics (category:tool,tabindex:-1)
+2020-04-21 23:33:18,899 [INFO] PluginManage:292 - Check plugin clock
+2020-04-21 23:33:18,913 [INFO] PluginManage:342 - Loaded plugin clock (category:base,tabindex:2)
+2020-04-21 23:33:18,913 [INFO] PluginManage:292 - Check plugin ddr
+2020-04-21 23:33:18,916 [INFO] PluginManage:342 - Loaded plugin ddr (category:tool,tabindex:6)
+2020-04-21 23:33:18,917 [INFO] PluginManage:292 - Check plugin filemanager
+2020-04-21 23:33:19,054 [INFO] PluginManage:342 - Loaded plugin filemanager (category:base,tabindex:10)
+2020-04-21 23:33:19,055 [INFO] PluginManage:292 - Check plugin ipmanager
+2020-04-21 23:33:19,065 [INFO] PluginManage:342 - Loaded plugin ipmanager (category:base,tabindex:5)
+2020-04-21 23:33:19,066 [INFO] PluginManage:292 - Check plugin pinoutandconfiguration
+2020-04-21 23:33:19,077 [INFO] PluginManage:342 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2020-04-21 23:33:19,077 [INFO] PluginManage:292 - Check plugin pinoutconfig
+2020-04-21 23:33:19,110 [INFO] PluginManage:342 - Loaded plugin pinoutconfig (category:base,tabindex:0)
+2020-04-21 23:33:19,111 [INFO] PluginManage:292 - Check plugin power
+2020-04-21 23:33:19,124 [INFO] PluginManage:342 - Loaded plugin power (category:power,tabindex:4)
+2020-04-21 23:33:19,124 [INFO] PluginManage:292 - Check plugin projectmanager
+2020-04-21 23:33:19,144 [INFO] PluginManage:342 - Loaded plugin projectmanager (category:projectmanager,tabindex:3)
+2020-04-21 23:33:19,144 [INFO] PluginManage:292 - Check plugin thirdparty
+2020-04-21 23:33:19,198 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (/home/chris/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 21 ms. number of Sw pack : 16
+2020-04-21 23:33:19,218 [INFO] PluginManage:342 - Loaded plugin thirdparty (category:base,tabindex:-1)
+2020-04-21 23:33:19,219 [INFO] PluginManage:292 - Check plugin tools
+2020-04-21 23:33:19,221 [INFO] PluginManage:342 - Loaded plugin tools (category:base,tabindex:7)
+2020-04-21 23:33:19,221 [INFO] PluginManage:292 - Check plugin tutovideos
+2020-04-21 23:33:19,222 [INFO] PluginManage:347 - Ignore plugin tutovideos (category:base)
+2020-04-21 23:33:19,222 [INFO] PluginManage:292 - Check plugin updater
+2020-04-21 23:33:19,237 [INFO] PluginManage:342 - Loaded plugin updater (category:base,tabindex:12)
+2020-04-21 23:33:19,238 [INFO] PluginManage:265 - PluginManage : Loaded plugins [12]
+2020-04-21 23:33:19,433 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-04-21 23:33:19,499 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,499 [INFO] PluginManager:200 - loadIPPluginJar : add ucpd
+2020-04-21 23:33:19,505 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,506 [INFO] PluginManager:200 - loadIPPluginJar : add gfxmmu
+2020-04-21 23:33:19,507 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,508 [INFO] PluginManager:200 - loadIPPluginJar : add tsc
+2020-04-21 23:33:19,510 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,511 [INFO] PluginManager:200 - loadIPPluginJar : add i2c
+2020-04-21 23:33:19,513 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,513 [INFO] PluginManager:200 - loadIPPluginJar : add can
+2020-04-21 23:33:19,516 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,516 [INFO] PluginManager:200 - loadIPPluginJar : add spi
+2020-04-21 23:33:19,518 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,518 [INFO] PluginManager:200 - loadIPPluginJar : add dfsdm
+2020-04-21 23:33:19,520 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,520 [INFO] PluginManager:200 - loadIPPluginJar : add comp
+2020-04-21 23:33:19,527 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,528 [INFO] PluginManager:200 - loadIPPluginJar : add freertos
+2020-04-21 23:33:19,532 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,533 [INFO] PluginManager:200 - loadIPPluginJar : add mdma
+2020-04-21 23:33:19,537 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,538 [INFO] PluginManager:200 - loadIPPluginJar : add sai
+2020-04-21 23:33:19,544 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,544 [INFO] PluginManager:200 - loadIPPluginJar : add dma
+2020-04-21 23:33:19,546 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,546 [INFO] PluginManager:200 - loadIPPluginJar : add quadspi
+2020-04-21 23:33:19,550 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,551 [INFO] PluginManager:200 - loadIPPluginJar : add touchsensing
+2020-04-21 23:33:19,553 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,553 [INFO] PluginManager:200 - loadIPPluginJar : add tracer_emb
+2020-04-21 23:33:19,555 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,556 [INFO] PluginManager:200 - loadIPPluginJar : add usart
+2020-04-21 23:33:19,560 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,560 [INFO] PluginManager:200 - loadIPPluginJar : add stm32_wpan
+2020-04-21 23:33:19,587 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,589 [INFO] PluginManager:200 - loadIPPluginJar : add nvic
+2020-04-21 23:33:19,595 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,595 [INFO] PluginManager:200 - loadIPPluginJar : add gic
+2020-04-21 23:33:19,600 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,600 [INFO] PluginManager:200 - loadIPPluginJar : add gpio
+2020-04-21 23:33:19,602 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,602 [INFO] PluginManager:200 - loadIPPluginJar : add ltdc
+2020-04-21 23:33:19,603 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,604 [INFO] PluginManager:200 - loadIPPluginJar : add fatfs
+2020-04-21 23:33:19,608 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,608 [INFO] PluginManager:200 - loadIPPluginJar : add fmc
+2020-04-21 23:33:19,610 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,611 [INFO] PluginManager:200 - loadIPPluginJar : add hash
+2020-04-21 23:33:19,618 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,622 [INFO] PluginManager:200 - loadIPPluginJar : add plateformsettings
+2020-04-21 23:33:19,624 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,625 [INFO] PluginManager:200 - loadIPPluginJar : add cryp
+2020-04-21 23:33:19,628 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,629 [INFO] PluginManager:200 - loadIPPluginJar : add ipddr
+2020-04-21 23:33:19,633 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,633 [INFO] PluginManager:200 - loadIPPluginJar : add resmgrutility
+2020-04-21 23:33:19,635 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,635 [INFO] PluginManager:200 - loadIPPluginJar : add genericplugin
+2020-04-21 23:33:19,637 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,637 [INFO] PluginManager:200 - loadIPPluginJar : add aes
+2020-04-21 23:33:19,640 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,640 [INFO] PluginManager:200 - loadIPPluginJar : add i2s
+2020-04-21 23:33:19,642 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,643 [INFO] PluginManager:200 - loadIPPluginJar : add ts
+2020-04-21 23:33:19,645 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,646 [INFO] PluginManager:200 - loadIPPluginJar : add opamp
+2020-04-21 23:33:19,653 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,653 [INFO] PluginManager:200 - loadIPPluginJar : add adc
+2020-04-21 23:33:19,655 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,656 [INFO] PluginManager:200 - loadIPPluginJar : add tim
+2020-04-21 23:33:19,659 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,659 [INFO] PluginManager:200 - loadIPPluginJar : add gtzc
+2020-04-21 23:33:19,662 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:19,663 [INFO] PluginManager:200 - loadIPPluginJar : add pdm2pcm
+2020-04-21 23:33:19,915 [INFO] BoardConnectionPanel:3472 - [DDR PANEL] STM32CubeIDE environment
+2020-04-21 23:33:19,916 [INFO] MainDdrPanel:103 - [DDR PANEL] GETTER - cubeProgrammerPath is: null
+2020-04-21 23:33:20,134 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-04-21 23:33:20,291 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-04-21 23:33:20,295 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-04-21 23:33:20,296 [FATAL] Updater:277 - Updater called before beeing initialized
+2020-04-21 23:33:20,301 [INFO] BoardConnectionPanel:3472 - [DDR PANEL] STM32CubeIDE environment
+2020-04-21 23:33:20,302 [INFO] MainDdrPanel:103 - [DDR PANEL] GETTER - cubeProgrammerPath is: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.linux64_1.3.0.202002181050/tools/bin
+2020-04-21 23:33:20,305 [INFO] ProgrammerExecThread:148 - [ProgrammerAPI] CubeProgrammer command construction: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.linux64_1.3.0.202002181050/tools/bin/STM32_Programmer_CLI -l
+2020-04-21 23:33:20,506 [INFO] MainDdrPanel:93 - [DDR PANEL] SETTER - Set cubeProgrammerPath to: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.ide.mcu.externaltools.cubeprogrammer.linux64_1.3.0.202002181050/tools/bin
+2020-04-21 23:33:20,516 [INFO] Updater:886 - Updater Version found : 5.6.0
+2020-04-21 23:33:20,540 [INFO] ApplicationProperties:181 - Using Application install path: /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639
+2020-04-21 23:33:20,867 [INFO] MainUpdater:2230 - connection check result : 10
+2020-04-21 23:33:20,868 [INFO] MainUpdater:2874 - Updater definition file requires update
+2020-04-21 23:33:20,873 [INFO] MainUpdater:236 - Updater Check For Update Now.
+2020-04-21 23:33:20,874 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.60
+2020-04-21 23:33:20,970 [INFO] ServerAccessManage:348 - Download File updaters.zip
+2020-04-21 23:33:21,024 [INFO] FileExtend:225 - Unzip File : updaters.zip
+2020-04-21 23:33:21,024 [INFO] FileExtend:240 - Standard Zip Deflate
+2020-04-21 23:33:21,260 [INFO] ServerAccessManage:348 - Download File PacksControlFlags.xml
+2020-04-21 23:33:21,340 [INFO] ServerAccessManage:348 - Download File cubemx.pidx
+2020-04-21 23:33:21,428 [INFO] LoadServerUpdatesThread:301 - End of LoadServerUpdate Thread
+2020-04-21 23:33:21,494 [INFO] CheckServerUpdateThread:92 - End of CheckServer Thread
+2020-04-21 23:33:21,690 [INFO] MainUpdater:2230 - connection check result : 10
+2020-04-21 23:33:21,789 [INFO] MicroXplorer:390 - Change Database Path : 
+2020-04-21 23:33:21,790 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.60
+2020-04-21 23:33:21,794 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-04-21 23:33:21,795 [INFO] UtilMem:74 - Begin LoadConfig() Used Memory: 220027080 Bytes (544210944)
+2020-04-21 23:33:21,797 [INFO] MicroXplorer:390 - Change Database Path : 
+2020-04-21 23:33:21,797 [INFO] MicroXplorer:420 - Change Database Version : DB.5.0.60
+2020-04-21 23:33:21,797 [INFO] OpenFileManager:274 - Change cursor
+2020-04-21 23:33:22,223 [ERROR] Engine:1314 - Problem during Copy of File ARM.CMSIS.5.6.0_Modes.xml
+2020-04-21 23:33:22,223 [ERROR] Engine:162 - cannot copy files for sw pack name : ARM.CMSIS.5.6.0
+2020-04-21 23:33:22,223 [ERROR] Engine:1314 - Problem during Copy of File ARM.CMSIS.5.6.0_Configs.xml
+2020-04-21 23:33:22,223 [ERROR] Engine:170 - cannot copy files for sw pack name : ARM.CMSIS.5.6.0
+2020-04-21 23:33:22,224 [INFO] ThirdPartyDb:261 - Close Third Party DataBase File (/home/chris/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-04-21 23:33:22,252 [ERROR] ThirdParty:759 - Integrity check failed: pack='[ARM.CMSIS.5.6.0]' / reason: 
+2020-04-21 23:33:22,284 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (/home/chris/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 19 ms. number of Sw pack : 16
+2020-04-21 23:33:22,404 [INFO] ThirdPartyDb:261 - Close Third Party DataBase File (/home/chris/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml)
+2020-04-21 23:33:22,426 [INFO] IntegrityCheckThread:98 - End integrity checks thread
+2020-04-21 23:33:23,112 [INFO] UtilMem:74 - End LoadConfig() Used Memory: 341409136 Bytes (544210944)
+2020-04-21 23:33:23,113 [INFO] DbMcusXml:110 - Load MCU database from /home/chris/st/stm32cubeide_1.2.0/plugins/com.st.stm32cube.common.mx_5.6.0.202002181639//db//mcu/families.xml
+2020-04-21 23:33:24,099 [INFO] DbMcusJson:90 - JSON generation date=Mon Apr 06 16:04:59 BST 2020 (1586185499)
+2020-04-21 23:33:24,793 [INFO] DbMcus:171 - Found 1670 MCUs (1625 are supported by CubeMX, 1625 are visible in CubeMX)
+2020-04-21 23:33:24,793 [INFO] ApiDb:158 - Load user favorites file /home/chris/.stm32cubemx/favorites.mcus.txt: 0 item(s)
+2020-04-21 23:33:24,793 [INFO] ApiDb:163 - User favorites MCUs=[]
+2020-04-21 23:33:24,794 [INFO] DbMcus:183 - Set 0 / 0 favorites MCUs
+2020-04-21 23:33:24,809 [INFO] ThirdPartyDb:295 - Open Third Party DataBase File (/home/chris/.stm32cubemx/plugins/thirdparty/db/thirdparties_db.xml) : 7 ms. number of Sw pack : 16
+2020-04-21 23:33:24,826 [INFO] DependencyParser:785 - This component is not compatible with the current MCU : [1580776214022]
+2020-04-21 23:33:24,826 [INFO] ThirdPartyModel:521 - Component with status : MCU_INCOMPATIBLE for condition : OS Tick GTIM id : 1580776213349
+2020-04-21 23:33:24,827 [INFO] DependencyParser:785 - This component is not compatible with the current MCU : [1580776216598, 1580776214105]
+2020-04-21 23:33:25,040 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 5.0.0
+2020-04-21 23:33:25,040 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 1.1.0
+2020-04-21 23:33:25,040 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 4.1.0
+2020-04-21 23:33:25,041 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-SUBG2 1.0.0
+2020-04-21 23:33:25,041 [INFO] ThirdParty:899 - CMSIS Pack Vendor :ARM CMSIS 5.6.0
+2020-04-21 23:33:25,041 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-GNSS1 4.0.0
+2020-04-21 23:33:25,041 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.1
+2020-04-21 23:33:25,041 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics FreeRTOS 0.0.1
+2020-04-21 23:33:25,041 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE1 4.4.0
+2020-04-21 23:33:25,041 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.0.0
+2020-04-21 23:33:25,041 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-TOUCHGFX 4.13.0
+2020-04-21 23:33:25,041 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-NFC4 1.5.2
+2020-04-21 23:33:25,041 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-MEMS1 7.1.0
+2020-04-21 23:33:25,041 [INFO] ThirdParty:899 - CMSIS Pack Vendor :STMicroelectronics X-CUBE-BLE2 1.0.0
+2020-04-21 23:33:25,261 [INFO] PinOutPanel:1420 - setPackage(No Configuration,No Configuration)
+2020-04-21 23:33:25,262 [INFO] PinOutPanel:1420 - setPackage(STM32L011D4Px,TSSOP14)
+2020-04-21 23:33:25,865 [INFO] UtilMem:74 - Before build in PCC Used Memory: 343003064 Bytes (628097024)
+2020-04-21 23:33:26,438 [INFO] SharedServices:71 - Folder for power plug-in: /home/chris/.stm32cubemx/plugins/power
+2020-04-21 23:33:26,488 [INFO] SharedServices:71 - Folder for power plug-in: /home/chris/.stm32cubemx/plugins/power
+2020-04-21 23:33:26,568 [INFO] SharedServices:71 - Folder for power plug-in: /home/chris/.stm32cubemx/plugins/power
+2020-04-21 23:33:26,574 [INFO] SharedServices:71 - Folder for power plug-in: /home/chris/.stm32cubemx/plugins/power
+2020-04-21 23:33:26,809 [INFO] UtilMem:74 - After build in PCC Used Memory: 406177728 Bytes (628097024)
+2020-04-21 23:33:26,832 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,832 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,833 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,833 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,833 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,834 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,834 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,834 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,835 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,835 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,835 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,836 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,836 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,836 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,836 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,836 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,837 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,837 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,837 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,837 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,837 [INFO] IPUIPlugin:65 - create IPUIPlugin
+2020-04-21 23:33:26,864 [INFO] LogOutputStream:76 - [STDOUT_REDIRECT] toolchainItems.length=====1
+2020-04-21 23:33:26,973 [INFO] OpenFileManager:294 - Restore cursor

@@ -106,7 +106,17 @@ int main(void)
 
   LL_TIM_EnableCounter(TIM2);
   TIM2->PSC = 0;
-  TIM2->ARR = 128;
+
+  /* PWM Freq must be set using one of the ARR values:
+   *
+   * 	135		240KHz
+   * 	270		120KHz
+   * 	405		80KHz
+   * 	540		60KHz
+   * 	675		48KHz
+   */
+
+  TIM2->ARR = 540;
   // init the PWM duty to 0%
   TIM2->CCR1 = 0;
   TIM2->CCR2 = 0;
@@ -145,7 +155,7 @@ int main(void)
 
 	  if(FX_ENABLE_GPIO_Port->ODR)
 	  {
-		  LL_mDelay(50);
+		  LL_mDelay(100);
 		  //ledprogram_contfade();
 		  ledprogram_symcontfade();
 		  //ledprogram_stepfade();

@@ -1,0 +1,33 @@
+/** 
+* @file fade_log_seq.h
+* @author chris sutton 
+* @brief  
+* @version 0.1 
+* @date 18-Mar-2020 
+* @copyright Copyright (c) 2020 
+* Generated with Python!
+*/ 
+
+#ifndef __FADE_LOG_SEQ_H__
+
+#define __FADE_LOG_SEQ_H__
+
+
+#define FADE_LOG_SEQ_DATA_SIZE 64
+uint16_t fade_log_seq_data_table[FADE_LOG_SEQ_DATA_SIZE] = {
+	7, 7, 7, 8, 9, 9, 10, 10, 11, 12, 
+	13, 14, 14, 15, 17, 18, 19, 20, 21, 23, 
+	24, 26, 28, 30, 32, 34, 36, 38, 41, 44, 
+	46, 49, 53, 56, 60, 64, 68, 73, 77, 82, 
+	88, 94, 100, 106, 113, 121, 129, 137, 146, 156, 
+	166, 177, 189, 201, 214, 228, 243, 259, 276, 294, 
+	314, 334, 356, 379
+};
+
+
+
+
+
+#endif //__SINE_H__
+
+
