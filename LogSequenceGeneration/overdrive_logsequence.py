@@ -4,7 +4,7 @@ from createfile import write_to_header_file
 
 N = 64
 #x1 = np.geomspace(start=30, stop=110,  num=N, endpoint=True, dtype=int)
-x1 = np.geomspace(start=2, stop=256,  num=N, endpoint=True, dtype=int)
+x1 = np.geomspace(start=7, stop=256,  num=N, endpoint=True, dtype=int)
 x2 = np.linspace(start=30, stop=110, num=N, endpoint=True, dtype=int)
 #x2 = np.geomspace(start=1024, stop=48,  num=N, endpoint=True, dtype=int)
 #x3 = np.concatenate([x1, x2])

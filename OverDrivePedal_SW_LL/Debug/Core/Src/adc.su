@@ -1,0 +1,11 @@
+stm32l0xx_ll_adc.h:1735:22:LL_ADC_SetCommonFrequencyMode	16	static
+stm32l0xx_ll_adc.h:2151:22:LL_ADC_SetSamplingTimeCommonChannels	16	static
+stm32l0xx_ll_adc.h:2339:22:LL_ADC_REG_SetSequencerScanDirection	16	static
+stm32l0xx_ll_adc.h:2545:22:LL_ADC_REG_SetSequencerChAdd	16	static
+stm32l0xx_ll_adc.h:3135:22:LL_ADC_SetOverSamplingScope	16	static
+stm32l0xx_ll_adc.h:3303:22:LL_ADC_EnableInternalRegulator	16	static
+stm32l0xx_ll_adc.h:3877:22:LL_ADC_DisableIT_EOC	16	static
+stm32l0xx_ll_adc.h:3888:22:LL_ADC_DisableIT_EOS	16	static
+stm32l0xx_ll_bus.h:786:22:LL_APB2_GRP1_EnableClock	24	static
+stm32l0xx_ll_bus.h:987:22:LL_IOP_GRP1_EnableClock	24	static
+adc.c:28:6:MX_ADC_Init	80	static

@@ -20,6 +20,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "adc.h"
 #include "lptim.h"
 #include "tim.h"
 #include "gpio.h"
@@ -46,7 +47,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+uint32_t adc_input[1] = {};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -96,6 +97,7 @@ int main(void)
   MX_TIM2_Init();
   MX_LPTIM1_Init();
   MX_TIM21_Init();
+  MX_ADC_Init();
   /* USER CODE BEGIN 2 */
 
   LL_TIM_OC_SetMode(TIM2, LL_TIM_CHANNEL_CH1, LL_TIM_OCMODE_PWM1);
@@ -136,34 +138,39 @@ int main(void)
   TIM21->ARR = 65535;
   //HAL_TIM_Base_Start_IT(&htim21);
 
-  /*
-  // led fade timer
-  LL_LPTIM_EnableIT_ARRM(LPTIM1);
-  LL_LPTIM_Enable(LPTIM1);
-  LL_LPTIM_StartCounter(LPTIM1,LL_LPTIM_OPERATING_MODE_CONTINUOUS);
 
-  //HAL_LPTIM_Counter_Start_IT(&hlptim1, LED_PERIOD_LIMIT);
-  LPTIM1->CFGR |= LPTIM_CFGR_PRESC_0 | LPTIM_CFGR_PRESC_1 | LPTIM_CFGR_PRESC_2;
-  LPTIM1->ARR = 512;
-   */
+  LL_ADC_EnableInternalRegulator(ADC1);
+  LL_ADC_StartCalibration(ADC1);
+  LL_ADC_Enable(ADC1);
+
   /* USER CODE END 2 */
-
+  uint32_t adc_data = 0;
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	  if(LL_ADC_REG_IsConversionOngoing(ADC1) == 0)
+	  {
+		  LL_ADC_REG_StartConversion(ADC1);
+		  if(LL_ADC_IsActiveFlag_EOC(ADC1))
+		  {
+			  adc_data = LL_ADC_REG_ReadConversionData32(ADC1);
+			  if(adc_data < 200)
+				  adc_data = 200;
+		  }
+	  }
 
 	  if(FX_ENABLE_GPIO_Port->ODR)
 	  {
-		  LL_mDelay(100);
+		  LL_mDelay(adc_data/10);
 		  //ledprogram_contfade();
 		  ledprogram_symcontfade();
 		  //ledprogram_stepfade();
 	  }
-	  else
-	  {
-		  ledprogram_resetall();
-	  }
+
+
+
+
 
 
 
